@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <meta name="format-detection" content="telephone=no"/>
+      <meta name="hotcss" content="max-width=640">
+      <meta name="screen-orientation" content="portrait">
+    <title>my-project</title>
+      <style>
+          .view {
+              transition: all .5s ease;
+          }
+          .test-enter, .test-leave {
+              opacity: 0;
+              transform: translate3d(10px, 0, 0);
+          }
+          .v-link-active {
+              color: red;
+          }
+          [v-cloak] {
+              display: none;
+          }
+      </style>
+  </head>
+  <body>
+
+    <div id="app">
+        <a v-link="{path : '/about'}">我是ab2out</a>
+        <a v-link="{path : '/test'}">我是test</a>
+
+        <router-view class="view" transition="test" transition-mode="out-in" keep-alive></router-view>
+    </div>
+
+    <script src="../../dist/forchange/forchange.js"></script>
+  </body>
+</html>
