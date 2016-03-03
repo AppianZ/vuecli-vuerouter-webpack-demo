@@ -1,0 +1,188 @@
+body,html {
+  min-width: 1000px;
+  height: 100%;
+  background: rgb(34,41,55);
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1456553838_4432454.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1456553838_4432454.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1456553838_4432454.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1456553838_4432454.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1456553838_4432454.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family: 'iconfont';
+  font-size: 18px;
+  font-weight: bolder;
+  color: #FFFFFF;
+}
+
+/*横头部*/
+#header {
+  width: 100%;
+  background: rgb(19,22,29);
+  height: 50px;
+  line-height: 50px;
+}
+#header div {
+  display: inline-block;
+}
+#logo {
+  width: 240px;
+  text-align: center;
+  cursor: default;
+}
+#logo b {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+#menu {
+  width: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+#managerInfo {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  clear: both;
+}
+#managerInfo b {
+  font-weight: bolder;
+  font-size: 16px;
+  vertical-align: middle;
+}
+#managerInfo button {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  margin: 10px 15px;
+  background: rgb(24, 27, 38);
+  border: 1px solid rgb(24, 27, 38);
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+#managerInfo button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 40px rgba(255,255,255,.3);
+}
+/*横头部结束*/
+
+/*右侧导航*/
+#nav {
+  display: inline-block;
+  height: 100%;
+  width: 240px;
+  color: #FFFFFF;
+  background: rgb(28,32,44);
+  overflow-x: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#nav.hidenav {
+  width: 40px;
+}
+#sea-box {
+  width: 240px;
+  height: 60px;
+  margin: 0 0 20px 0;
+  line-height: 30px;
+}
+#sea-box p {
+  position: relative;
+  width:226px;
+  margin: 0 7px;
+}
+#sea-box p #seaInput {
+  display: inline-block;
+  width: 165px;
+  height: 30px;
+  line-height: 30px;
+  margin: 15px auto;
+  padding: 0 15px 0 32px;
+  font-size: 14px;
+  color: #EFEFEF;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  background: rgb(24, 27, 38);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#sea-box p #seaInput.hideinput {
+  background: rgb(28,32,44);
+  border: 1px solid rgb(28,32,44);
+  color: rgb(28,32,44);
+}
+#sea-box p span {
+  position: absolute;
+  top: 14px;
+  left: 5px;
+  cursor: pointer;
+}
+#nav-box {
+}
+#nav-box li {
+  width: 240px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  overflow: hidden;
+}
+#nav-box p{
+  height: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: rgb(24, 27, 38);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+#nav-box p.limitHeight {
+  height: 0px;
+}
+#nav-box li p:first-child {
+  background: rgb(28,32,44);
+  border-left:2px solid rgb(24, 27, 38);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#nav-box li p:first-child.pselect {
+  border-left:2px solid #FFFFFF ;
+}
+#nav-box p i {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+#nav-box p b {
+  color: #EEEEEE ;
+  font-weight: 500;
+}
+#nav-box li span {
+  margin: 0 15px 0 10px;
+  vertical-align: top;
+}
+#nav-box li span.left {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: rotate(90deg) ;
+  transform: rotate(90deg) ;
+  float: right;
+  cursor: pointer;
+}
+#nav-box li span.down {
+  -webkit-transform: rotate(0) ;
+  transform: rotate(0) ;
+  float: right;
+}
+/*右侧导航结束*/

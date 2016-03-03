@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test后台管理</title>
+    <style>
+        .view {
+            transition: all .5s ease;
+        }
+        .test-enter, .test-leave {
+            opacity: 0;
+            transform: translate3d(10px, 0, 0);
+        }
+        .v-link-active {
+            color: red;
+        }
+        [v-cloak] {
+            display: none;
+        }
+        #app {
+            height: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="../../dist/manager/css/manager.css">
+</head>
+<body>
+
+    <div id="app">
+        <header id="header">
+            <div id="logo">
+                <span class="iconfont">&#xe600;</span>
+                <b>PandaCollage</b>
+            </div>
+            <div id="menu">
+                <span class="iconfont" @click="hide">&#xe602;</span>
+            </div>
+            <div id="managerInfo">
+                您好，<b>123123</b>.
+                <button>SIGN OUT</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <section id="sea-box">
+                <p><input id="seaInput" placeholder="请在此处进行搜索"><span class="iconfont">&#xe609;</span></p>
+            </section>
+            <section id="nav-box">
+                <ul>
+                    <li>
+                        <p class="title" @click="click"><span class="iconfont">&#xe603;</span><i>用户管理</i><span class="iconfont left">&#xe60a;</span></p>
+                        <p class="limitHeight"><span class="iconfont">&#xe606;</span><b>设置用户等级</b></p>
+                    </li>
+                    <li>
+                        <p class="title" @click="click"><span class="iconfont">&#xe601;</span><i>课程管理</i><span class="iconfont left">&#xe60a;</span></p>
+                        <p class="limitHeight"><span class="iconfont">&#xe606;</span><b>所有书籍</b></p>
+                        <p class="limitHeight"><span class="iconfont">&#xe606;</span><b>所有学期</b></p>
+                    </li>
+                    <li>
+                        <p class="title" @click="click"><span class="iconfont">&#xe60b;</span><i>考试系统</i><span class="iconfont left">&#xe60a;</span></p>
+                    </li>
+                    <li>
+                        <p class="title" @click="click"><span class="iconfont">&#xe605;</span><i>通知管理</i><span class="iconfont left">&#xe60a;</span></p>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <router-view class="view" transition="test" transition-mode="out-in" keep-alive></router-view>
+    </div>
+
+    <script src="../../dist/manager/manager.js"></script>
+</body>
+</html>
